@@ -53,23 +53,23 @@ include ("configuracao.php");
 			</div>
 
 			<?php
-            $sql = mysql_query("SELECT * FROM noticias ORDER BY data Desc");
+			$sql = mysql_query("SELECT * FROM noticias ORDER BY data Desc");
 
-            while ($linha = mysql_fetch_array($sql)) {
-                $autor = $linha['autor'];
-                $conteudo = $linha['conteudo'];
+			while ($linha = mysql_fetch_array($sql)) {
+				$autor = $linha['autor'];
+				$conteudo = $linha['conteudo'];
 
-                //echo '<p><blockquote> "'.$conteudo.'"<cite>'.$autor. '</cite></blockquote></p>';
-                //echo '<p class="panel">'.$conteudo.'</p>';
-                echo '<p class="panel"><blockquote> "' . $conteudo . '"<cite>' . $autor . '</cite></blockquote></p>';
-            }
+				//echo '<p><blockquote> "'.$conteudo.'"<cite>'.$autor. '</cite></blockquote></p>';
+				//echo '<p class="panel">'.$conteudo.'</p>';
+				echo '<p class="panel"><blockquote> "' . $conteudo . '"<cite>' . $autor . '</cite></blockquote></p>';
+			}
 			?>
 		</div>
 
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/foundation.min.js"></script>
 		<script>
-            $(document).foundation();
+			$(document).foundation();
 		</script>
 
 	</body>
