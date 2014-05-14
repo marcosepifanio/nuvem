@@ -1,6 +1,16 @@
-<html>
-<meta charset="UTF-8"
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zuada ...LaLALa</title>
 
-<!-- CALENDARIO -->
-<h1>Em construção....</h1>
+		<link rel="stylesheet" href="css/foundation.css" />
+		<script src="js/vendor/modernizr.js"></script>
+	</head>
+	<body>
+
+		<!-- CALENDARIO -->
+		<h1>Em construção....</h1>
+	</body>
 </html>

@@ -1,9 +1,10 @@
 <!--PROVISORIO -->
 <?php
-include("configuracao.php");
+include ("configuracao.php");
 $conteudo = $_POST['conteudo'];
 
-$autor = "admin";//obs alterar o autor para o valor da sessão
+$autor = "admin";
+//obs alterar o autor para o valor da sessão
 
 /* codigo que pega a data-time atual*/
 date_default_timezone_set('America/Sao_Paulo');
@@ -13,5 +14,4 @@ mysql_query("INSERT INTO noticias(conteudo,autor,data) VALUES ('$conteudo','$aut
 
 $redirecionar = "index.php";
 header("Location: $redirecionar");
-
 ?>
