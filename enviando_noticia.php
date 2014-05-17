@@ -12,6 +12,6 @@ $mysqldate = date("Y-m-d H:i:s");
 
 mysql_query("INSERT INTO noticias(conteudo,autor,data) VALUES ('$conteudo','$autor','$mysqldate')");
 
-$redirecionar = "index.php";
+$redirecionar = "noticias.php";
 header("Location: $redirecionar");
 ?>

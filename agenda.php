@@ -1,3 +1,6 @@
+<?php
+require_once 'cabecalho.php';
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 	<head>
@@ -15,7 +18,7 @@
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/foundation.min.js"></script>
 		<script>
-			$(document).foundation();
+            $(document).foundation();
 		</script>
 	</body>
 </html>
