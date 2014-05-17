@@ -28,7 +28,7 @@ require_once 'cabecalho.php';
 					<form method="post" action="enviando_noticia.php">
 						<div class="row">
 							<div class="large-12 columns">
-								<label><h3>Publicar noticia</h3> 									<textarea placeholder="Notícia..." name="conteudo"></textarea> </label>
+								<label><h3>Publicar noticia</h3> 									<textarea placeholder="Notícia..." name="conteudo" required=""></textarea> </label>
 							</div>
 						</div>
 						<div class="medium-4 columns">

@@ -8,7 +8,8 @@ require_once 'cabecalho.php';
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Zuada ...LaLALa</title>
 
-		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="css/foundation.css"/>
+
 		<script src="js/vendor/modernizr.js"></script>
 	</head>
 	<body>
@@ -22,9 +23,8 @@ require_once 'cabecalho.php';
         use WindowsAzure\Blob\Models\PublicAccessType;
         use WindowsAzure\Common\ServiceException;
 
-        $yourAccount = "portalvhds4mgzr9jnrc8b5";
-        $yourKey = "0drKDSTR4Ya7+Jn/KfJsmtkQKehw0+NQCAXC8IlHelnlrjYCUN7y/GdQQL2w8nqyECZk+bnVjuEL2/IDNuz4/Q==";
-        $connectionString = "DefaultEndpointsProtocol=https;AccountName=$yourAccount;AccountKey=$yourKey";
+       $yourAccount = "portalvhds3tq44pd0313pb";
+$yourKey = "ICnCp+Q6Y4f+s9OxiPfcoeJsWKE9/EPL8Zs+P/pBA7cM41kR/2IIR1bWYCaV7WDqZpnx2GhXDWFIXXCoka8qkw=="; $connectionString = "DefaultEndpointsProtocol=https;AccountName=$yourAccount;AccountKey=$yourKey";
         $blobRestProxy = ServicesBuilder::getInstance() -> createBlobService($connectionString);
 
         try {
@@ -38,8 +38,8 @@ require_once 'cabecalho.php';
                 if ($linha == 1) {
                     echo '<div class="row">';
                 }
+                echo '<div class="large-6 columns"><img class="th" src="' . $link . '" /></div>';
 
-                echo '<div class="large-4 columns"><img class="th" src="' . $link . '" /></div>';
 
                 if ($linha == 4) {
                     echo '</div>';
