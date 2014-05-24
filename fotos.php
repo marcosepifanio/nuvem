@@ -1,3 +1,7 @@
+<?php
+require_once 'cabecalho.php';
+?>
+
 <html class="no-js" lang="pt br">
   <head>
     <meta charset="utf-8" />
@@ -25,6 +29,7 @@ use WindowsAzure\Blob\Models\PublicAccessType;
 use WindowsAzure\Common\ServiceException;
 
 
+
 $connectionString = "DefaultEndpointsProtocol=https;AccountName=$conta;AccountKey=$senha";
 $blobRestProxy = ServicesBuilder::getInstance()->createBlobService($connectionString);
 
@@ -43,7 +48,7 @@ try {
 		echo '<div class="row">';
 		}
 		
-		echo '<div class="large-3 columns"> <a class="th" href="'.$link.'"><img src="'.$link.'"></a></div>';
+		echo '<div class="large-3 columns"> <a class="th" href="foto.php?imagen'.$link.'"><img src="'.$link.'"></a></div>';
 		
 		if($linha == 4){
 		echo '</div>';
