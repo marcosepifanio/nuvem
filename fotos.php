@@ -48,7 +48,7 @@ try {
 		echo '<div class="row">';
 		}
 		
-		echo '<div class="large-3 columns"> <a class="th" href="foto.php?imagen'.$link.'"><img src="'.$link.'"></a></div>';
+		echo '<div class="large-3 columns"> <a class="th" href="foto.php?imagem ='.$link.'"><img src="'.$link.'"></a></div>';
 		
 		if($linha == 4){
 		echo '</div>';

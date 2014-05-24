@@ -1,5 +1,5 @@
 <?php
 	require_once 'cabecalho.php';    
-    echo '<img src="'.$imagen.'">';
+    echo '<img src="'.$imagem.'">';
 ?>
 
