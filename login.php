@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Zuada ...LaLALa</title>
+		<title>Login - Zuada ...LaLALa</title>
 
 		<link rel="stylesheet" href="css/foundation.css" />
 		<script src="js/vendor/modernizr.js"></script>
 	</head>
 	<body>
 
-		<form data-abide method="post" action="ope.php" id="formlogin" name="formlogin" >
+		<form data-abide method="post" action="confirmar-login.php" id="formlogin" name="formlogin" >
 			<div class="row">
 				<div class="small-8">
 					<div class="row">
@@ -18,7 +18,7 @@
 							<label for="email" class="right inline">E-Mail:</label>
 						</div>
 						<div class="small-9 columns">
-							<input type="email" id="email" placeholder="joao@mail.com" required="">
+							<input type="email" id="email" name="email" placeholder="joao@mail.com" required="">
 							<small class="error">Field required</small>
 						</div>
 					</div>
@@ -29,7 +29,7 @@
                             <label for="senha" class="right inline">Senha:</label>
                         </div>
                         <div class="small-9 columns">
-                            <input type="password" id="senha" placeholder="****" required="">
+                            <input type="password" id="senha" name="senha" placeholder="****" required="">
                             <small class="error">Field required</small>
                         </div>
                     </div>

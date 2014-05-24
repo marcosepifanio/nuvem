@@ -1,3 +1,6 @@
+<?php
+require_once 'session-start.php';
+?>
 <html class="no-js" lang="pt br">
   <head>
     <meta charset="utf-8" />
@@ -42,9 +45,9 @@ try {
 		if($linha == 1){//estou colocando a div rows de forma dinamica
 		echo '<div class="row">';
 		}
-		
+
 		echo '<div class="large-3 columns"> <a class="th" href="'.$link.'"><img src="'.$link.'"></a></div>';
-		
+
 		if($linha == 4){
 		echo '</div>';
 		$linha = 0;
@@ -53,7 +56,7 @@ try {
 }
 catch(ServiceException $e){
     // Handle exception based on error codes and messages.
-    // Error codes and messages are here: 
+    // Error codes and messages are here:
     // http://msdn.microsoft.com/en-us/library/windowsazure/dd179439.aspx
     $code = $e->getCode();
     $error_message = $e->getMessage();
@@ -61,9 +64,9 @@ catch(ServiceException $e){
 }
 ?>
 
-    
-        
-  
+
+
+
   <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>

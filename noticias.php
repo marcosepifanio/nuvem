@@ -1,6 +1,7 @@
 <?php
 require_once 'configuracao.php';
 require_once 'cabecalho.php';
+require_once 'session-start.php';
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
