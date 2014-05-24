@@ -25,7 +25,7 @@
 					</li>
 					<li class="divider"></li>
 					<li>
-						<a href="fotos.php" class="">Fotos</a>
+						<a href="fotos_slide.php" class="">Fotos</a>
 					</li>
 					<li class="divider"></li>
 					<li>
