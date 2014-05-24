@@ -47,7 +47,7 @@ try {
 		if($linha == 1){//estou colocando a div rows de forma dinamica
 		echo '<div class="row">';
 		}
-		echo '<div class="large-3 columns"> <a class="th" href="foto.php?link="'.$link.'"><img src="'.$link.'"></a></div>';
+		echo '<div class="large-3 columns"> <a class="th" href="foto.php?imagem="'.$link.'"><img src="'.$link.'"></a></div>';
 		
 		
 		if($linha == 4){
