@@ -45,7 +45,7 @@ try {
     {
         $nome = $blob->getName();
 		$link = $blob->getUrl();
-		echo '<li><img src"'.$link.'"></li>';
+		echo '<li><img src="'.$link.'"></li>';
     }
     
 	echo "</ul>";
