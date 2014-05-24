@@ -39,7 +39,7 @@ try {
     $blob_list = $blobRestProxy->listBlobs("imagens");
     $blobs = $blob_list->getBlobs();
 	
-	echo "<ul data-orbit>";
+	echo '<div class="row"><div class="small-6 large-centered columns"><ul data-orbit>';
 	
     foreach($blobs as $blob)
     {
@@ -48,7 +48,7 @@ try {
 		echo '<li><img src="'.$link.'"></li>';
     }
     
-	echo "</ul>";
+	echo "</ul></div></div>";
 }
 catch(ServiceException $e){
     // Handle exception based on error codes and messages.
