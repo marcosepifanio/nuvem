@@ -41,7 +41,7 @@ require_once 'cabecalho.php';
 
 		try {
 			// List blobs.
-			$blob_list = $blobRestProxy -> listBlobs("imagens");
+			$blob_list = $blobRestProxy -> listBlobs("fotoszuada");
 			$blobs = $blob_list -> getBlobs();
 
 			echo '<div class="row"><div class="small-6 large-centered columns"><ul data-orbit>';
