@@ -35,46 +35,35 @@
 					</div>
 				</div>
 
-				<div class="small-9">
+				<div class="small-8">
 					<div class="row">
-						<div class="columns">
-							<ul class="button-group">
-								<li>
-									<input type="submit" class="button" value="Logar">
-								</li>
-								<li>
-									<a href="#" class="button" data-reveal-id="myModal">Cadastrar</a>
-								</li>
-							</ul>
-						</div>
+						<input type="submit" class="button" value="Logar">
+						<a href="#" class="button" data-reveal-id="myModal">Cadastrar</a>
 					</div>
 				</div>
-				<div id="myModal" class="reveal-modal" data-reveal>
-					<form>
-						<fieldset>
-							<legend>
-								Cadastrar Usuário
-							</legend>
-
-							<label for="nome">Usuário:
-								<input type="text" id="nome" placeholder="Joao.Ico" required="">
-							</label>
-							<label for="email">E-Mail:
-                                <input type="email" id="email" placeholder="Joao.Ico@gmail.com" required="">
-                            </label>
-                            <label for="password">senha:
-                                <input type="password" id="password" required="">
-                            </label>
-                            <label for="password">Usuário:
-                                <input type="password" id="password" required="">
-                            </label>
-						</fieldset>
-					</form>
-					<a class="close-reveal-modal">&#215;</a>
-				</div>
-
-			</div>
 		</form>
+		<div id="myModal" class="reveal-modal" data-reveal>
+			<form method="post" action="inserir.php">
+
+				<h3>Cadastrar Usuário</h3>
+
+				<label for="nome">Usuário:
+					<input type="text" id="nome" name="nome" placeholder="Joao.Ico" >
+				</label>
+				<label for="emailCadastro">E-Mail:
+					<input type="email" id="emailCadastro" name="emailCadastro" placeholder="Joao.Ico@gmail.com" >
+				</label>
+				<label for="password">Senha:
+					<input type="password" id="password" name="password">
+				</label>
+
+				<input type="submit" class="button" value="Cadastrar">
+
+			</form>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+		</div>
 
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/foundation.min.js"></script>
