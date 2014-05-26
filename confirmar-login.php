@@ -1,14 +1,14 @@
 <?php
-require_once 'configuracao.php';
 session_start();
+require_once 'configuracao.php';
 
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-$select = mysql_select_db("$banco") or die("Sem acesso ao DB, Entre em contato com lucas.compufc@gmail.com");
+//$select = mysql_select_db("$banco") or die("Sem acesso ao DB, Entre em contato com lucas.compufc@gmail.com");
+$conexao -> query("use $banco") or die ("Erro ao selecionar o database");
 
-// A vriavel $result pega as varias $login e $senha, faz uma pesquisa na tabela de usuarios
-$result = mysql_query("SELECT * FROM usuarios WHERE email_usuario = '$email' and senha = '$senha'");
+$result = $conexao -> prepare("SELECT * FROM usuarios WHERE email_usuario = '$email' and senha = '$senha'") or die("Erro ao selecionar o usuário");
 
 if (mysql_num_rows($result) > 0) {
     $_SESSION['email'] = $email;
