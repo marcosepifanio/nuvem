@@ -11,7 +11,6 @@ require_once 'session-start.php';
 		<title>Zuada ...LaLALa</title>
 
 		<link rel="stylesheet" href="css/foundation.css" />
-		<link rel="stylesheet" href="css/style.css" />
 		<script src="js/vendor/modernizr.js"></script>
 	</head>
 	<body>
@@ -43,14 +42,12 @@ require_once 'session-start.php';
 			</div>
 
 			<?php
-            $sql = mysql_query("SELECT * FROM noticias ORDER BY data Desc");
-
-            while ($linha = mysql_fetch_array($sql)) {
+            $sql = "SELECT * FROM noticias ORDER BY data Desc";
+            $stmt = $conexao -> prepare($sql);
+            $stmt -> execute();
+            while ($linha = $stmt -> fetch()) {
                 $autor = $linha['autor'];
                 $conteudo = $linha['conteudo'];
-
-                //echo '<p><blockquote> "'.$conteudo.'"<cite>'.$autor. '</cite></blockquote></p>';
-                //echo '<p class="panel">'.$conteudo.'</p>';
                 echo '<p class="panel"><blockquote> "' . $conteudo . '"<cite>' . $autor . '</cite></blockquote></p>';
             }
 			?>

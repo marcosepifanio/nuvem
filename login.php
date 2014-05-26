@@ -42,7 +42,7 @@
 						</div>
 						<div class="small-8">
 							<div class="row">
-								<input type="submit" class="button radius " value="Logar">
+								<input type="submit" class="button radius" title="Click para se logar"  value="Logar">
 								<a href="cadastro.php" class="button radius" title="Cadastrar novo usuário" >Cadastrar</a>
 							</div>
 						</div>

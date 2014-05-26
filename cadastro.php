@@ -62,9 +62,9 @@
 
 				<div class="small-8">
 					<div class="row">
-						<input class="button radius" type="submit" value="Cadastrar" />
-						<input class="button radius" type="reset" value="Limpar" />
-						<a href="login.php" class="button radius">Voltar</a>
+						<input class="button radius" type="submit" value="Cadastrar" title="Concluir cadastro"  />
+						<input class="button radius" type="reset" value="Limpar" title="Limpar campos" />
+						<a href="login.php" class="button radius" title="Voltar para login" >Voltar</a>
 					</div>
 				</div>
 			</form>
@@ -90,24 +90,26 @@
                                 minlength : 4
                             },
                             confirmPassword : {
+                                required : true,
                                 equalTo : "#password"
                             }
                         },
                         messages : {
                             nome : {
-                                required : "Você deve preencher o nome",
+                                required : "Campo Obrigatório",
                                 minlength : "O nome deve ter no mínimo 4 caracteres"
                             },
                             emailCadastro : {
-                                required : "Você deve preencher o email",
+                                required : "Campo Obrigatório",
                                 email : "Digite um email válido"
                             },
                             password : {
-                                required : "Você deve preencher a senha",
+                                required : "Campo Obrigatório",
                                 minlength : "A senha deve ter no mínimo 4 caracteres"
                             },
                             confirmPassword : {
-                                equalTo : "Digite uma senha igual a anterior"
+                                equalTo : "Digite uma senha igual a anterior",
+                                required : "Campo Obrigatório"
                             }
                         }
                     });
