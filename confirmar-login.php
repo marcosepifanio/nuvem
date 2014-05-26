@@ -7,10 +7,12 @@ $senha = $_POST['senha'];
 
 //$select = mysql_select_db("$banco") or die("Sem acesso ao DB, Entre em contato com lucas.compufc@gmail.com");
 $conexao -> query("use $banco") or die ("Erro ao selecionar o database");
+$sql = "SELECT * FROM usuarios WHERE email_usuario = '$email' and senha = '$senha'";
 
-$result = $conexao -> prepare("SELECT * FROM usuarios WHERE email_usuario = '$email' and senha = '$senha'") or die("Erro ao selecionar o usuário");
+$result = $conexao -> prepare($sql) or die("Erro ao selecionar o usuário");
+$result->execute();
 
-if (mysql_num_rows($result) > 0) {
+if ($result->rowCount() > 0) {
     $_SESSION['email'] = $email;
     $_SESSION['senha'] = $senha;
     header('location:index.php');
