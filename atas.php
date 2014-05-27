@@ -42,7 +42,7 @@ require_once 'session-start.php';
 			</div>
 
 			<?php
-            $sql = "SELECT * FROM ata ORDER BY data asc";
+            $sql = "SELECT * FROM ata ORDER BY data desc";
             $stmt = $conexao -> prepare($sql);
             $stmt -> execute();
             while ($linha = $stmt -> fetch()) {
