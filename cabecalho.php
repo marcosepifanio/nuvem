@@ -29,10 +29,6 @@
 					</li>
 					<li class="divider"></li>
 					<li>
-						<a href="calendario.php" class="">Calendario</a>
-					</li>
-					<li class="divider"></li>
-					<li>
 						<a href="atas.php" class="">Atas</a>
 					</li>
 					<li class="divider"></li>

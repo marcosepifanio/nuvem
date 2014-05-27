@@ -1,4 +1,4 @@
-body {
+#background {
 	background-color: #3498db;
 }
 
@@ -43,4 +43,11 @@ h2 {
 	border-radius: 3px;
 	box-shadow: 0px 0px 5px #ecf0f1;
 	text-align: center;
+}
+
+#boxButton {
+	position: relative;
+	float: left;
+	margin-left:39%;
+	margin-top: 20px;
 }
