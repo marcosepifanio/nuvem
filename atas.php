@@ -48,8 +48,8 @@ require_once 'session-start.php';
             while ($linha = $stmt -> fetch()) {
                 $autor = $linha['autor'];
                 $conteudo = $linha['conteudo'];
-                $data = $linha['data'];
-                echo '<p class="panel"><blockquote> "' . $conteudo . '"<cite>' . $autor .  '   </cite><cite>'. $data . '</cite></blockquote></p>';
+                $data = implode("/",array_reverse(explode("-",$linha['data'])));
+                echo '<p class="panel"><blockquote> "' . $conteudo . '"<cite>' . $autor .  ' no dia '. $data . '    </cite></blockquote></p>';
             }
 			?>
 		</div>
