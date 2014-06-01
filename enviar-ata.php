@@ -14,21 +14,20 @@ $nome = $statement -> fetch();
     echo $ex -> getMessage();
     die();
 }
-
-
 /* codigo que pega a data-time atual*/
+
 date_default_timezone_set('America/Sao_Paulo');
-$date = date('Y-m-d H:i:s');
+$date = date('Y-m-d');
 
 try {
-    $sql = "INSERT INTO noticias(conteudo,autor,data) VALUES (:conteudo,:autor,:data)";
+    $sql = "INSERT INTO ata(autor,conteudo,data) VALUES (:autor,:conteudo,:data)";
     $stmt = $conexao -> prepare($sql);
-    $stmt -> bindParam(':conteudo', $_REQUEST['conteudo']);
     $stmt -> bindParam(':autor', $nome['nome_usuario']);
+    $stmt -> bindParam(':conteudo', $_REQUEST['conteudo']);
     $stmt -> bindParam(':data', $date);
     $stmt -> execute();
 
-    $redirecionar = "noticias.php";
+    $redirecionar = "atas.php";
     header("Location: $redirecionar");
 } catch (PDOException $ex) {
     echo $ex -> getMessage();

@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/normalize.css" />
 		<script src="js/vendor/modernizr.js"></script>
 	</head>
-	<body>
+	<body id="background">
 		<div id="caixa">
 			<h2>Login</h2>
 		</div>
@@ -43,7 +43,7 @@
 						<div class="small-8">
 							<div class="row">
 								<input type="submit" class="button radius" title="Click para se logar"  value="Logar">
-								<a href="cadastro.php" class="button radius" title="Cadastrar novo usuário" >Cadastrar</a>
+								<a href="cadastro.php" class="button radius" title="Cadastrar novo usuário" > Cadastrar</a>
 							</div>
 						</div>
 				</form>

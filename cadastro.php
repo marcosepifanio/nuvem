@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body>
+	<body id="background">
 		<div id="caixa">
 			<h2>Cadastro de Usuários</h2>
 		</div>
