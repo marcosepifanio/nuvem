@@ -43,13 +43,16 @@ require_once 'session-start.php';
 			</div>
 
 			<?php
-            $sql = "SELECT * FROM noticia ORDER BY data Desc";
+            $sql = "SELECT * FROM noticias ORDER BY data Desc";
             $stmt = $conexao -> prepare($sql);
             $stmt -> execute();
             while ($linha = $stmt -> fetch()) {
                 $autor = $linha['autor'];
                 $conteudo = $linha['conteudo'];
-                echo '<p class="panel"><blockquote> ' . $conteudo . '<cite>' . $autor . '</cite></blockquote></p>';
+                $id = $linha['id'];
+                $link_apagar = "apagar_noticia.php?id=" . $id;
+                $link_editar = "editar_noticia.php?id=" . $id . "&conteudo=" . $conteudo;
+                echo '<p class="panel"><blockquote> "' . $conteudo . '"<cite>' . $autor . '</cite><br><a href="' . $link_editar . '" class="small button">Editar</a><a href="' . $link_apagar . '" class="small alert button">Apagar</a></blockquote></p>';
             }
 			?>
 		</div>
