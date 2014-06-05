@@ -43,13 +43,13 @@ require_once 'session-start.php';
 			</div>
 
 			<?php
-            $sql = "SELECT * FROM noticias ORDER BY data Desc";
+            $sql = "SELECT * FROM noticia ORDER BY data Desc";
             $stmt = $conexao -> prepare($sql);
             $stmt -> execute();
             while ($linha = $stmt -> fetch()) {
                 $autor = $linha['autor'];
                 $conteudo = $linha['conteudo'];
-                echo '<p class="panel"><blockquote> "' . $conteudo . '"<cite>' . $autor . '</cite></blockquote></p>';
+                echo '<p class="panel"><blockquote> ' . $conteudo . '<cite>' . $autor . '</cite></blockquote></p>';
             }
 			?>
 		</div>

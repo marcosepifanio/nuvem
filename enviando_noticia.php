@@ -5,7 +5,7 @@ require_once 'configuracao.php';
 $autor = $_SESSION['email'];
 
 try {
-$sqlName = "SELECT nome_usuario from usuarios where email_usuario =:email";
+$sqlName = "SELECT nome from usuario where email =:email";
 $statement = $conexao -> prepare($sqlName);
 $statement->bindValue(':email', $autor);
 $statement -> execute();
@@ -21,11 +21,11 @@ date_default_timezone_set('America/Sao_Paulo');
 $date = date('Y-m-d H:i:s');
 
 try {
-    $sql = "INSERT INTO noticias(conteudo,autor,data) VALUES (:conteudo,:autor,:data)";
+    $sql = "INSERT INTO noticia(conteudo,data,autor) VALUES (:conteudo,:data,:autor)";
     $stmt = $conexao -> prepare($sql);
     $stmt -> bindParam(':conteudo', $_REQUEST['conteudo']);
-    $stmt -> bindParam(':autor', $nome['nome_usuario']);
     $stmt -> bindParam(':data', $date);
+    $stmt -> bindParam(':autor', $nome['nome']);
     $stmt -> execute();
 
     $redirecionar = "noticias.php";

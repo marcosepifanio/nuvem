@@ -3,17 +3,17 @@ session_start();
 require_once 'configuracao.php';
 
 $email = $_POST['email'];
-$senha = $_POST['senha'];
+$senha = sha1($_POST['senha']);
 
-$conexao -> query("use $banco") or die ("Erro ao selecionar o database");
-$sql = "SELECT * FROM usuarios WHERE email_usuario =:email and senha =:senha";
+$conexao -> query("use $banco") or die("Erro ao selecionar o database");
+$sql = "SELECT * FROM usuario WHERE email =:email and senha =:senha";
 
 $result = $conexao -> prepare($sql) or die("Erro ao selecionar o usuário");
 $result -> bindParam(':email', $email);
 $result -> bindParam(':senha', $senha);
-$result->execute();
+$result -> execute();
 
-if ($result->fetch()) {
+if ($result -> fetch()) {
     $_SESSION['email'] = $email;
     $_SESSION['senha'] = $senha;
     header('location:index.php');

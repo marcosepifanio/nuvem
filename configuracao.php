@@ -1,8 +1,8 @@
 <?php
 $user = "root";
-$banco = "gerenciador_de_atividades";
+$banco = "zuada";
 $pass = "35614470";
-$dsn = "mysql:host=quixada1.cloudapp.net;dbname=gerenciador_de_atividades";
+$dsn = "mysql:host=quixada1.cloudapp.net;dbname=zuada";
 try {
     $conexao = new PDO($dsn, $user, $pass);
 } catch (PDOException $ex) {

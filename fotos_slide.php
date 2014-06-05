@@ -19,8 +19,8 @@ require_once 'cabecalho.php';
 						<p>
 							<label for="Enviar arquivo">Enviar foto:</label>
 						</p>
-						<input type="file" name="arquivo" class="width233" />
-						<input type="submit" name="enviar" value="Enviar" />
+						<input type="file"  name="arquivo" class="width233" />
+						<input type="submit" class="button success small" name="enviar" value="Enviar" />
 					</fieldset>
 				</form>
 			</div>
