@@ -21,10 +21,6 @@
 			<section class="top-bar-section">
 				<ul class="right">
 					<li>
-						<a href="agenda.php" class="">Agenda</a>
-					</li>
-					<li class="divider"></li>
-					<li>
 						<a href="fotos_slide.php" class="">Fotos</a>
 					</li>
 					<li class="divider"></li>
@@ -37,8 +33,8 @@
 					</li>
 					<li class="divider"></li>
 					<li>
-                        <a href="sair.php" class="">Logout</a>
-                    </li>
+						<a href="sair.php" class="">Logout</a>
+					</li>
 				</ul>
 			</section>
 		</nav>
