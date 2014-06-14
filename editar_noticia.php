@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
     $data = date('Y-m-d H:i:s');
 
     try {
-        $sqlName = "update noticia set conteudo =:conteudo,data =: data where id =:id";
+        $sqlName = "update noticia set conteudo =:conteudo,data =:data where id =:id";
         $statement = $conexao->prepare($sqlName);
         $statement->bindParam(':id', $id);
         $statement->bindParam(':data', $data);
