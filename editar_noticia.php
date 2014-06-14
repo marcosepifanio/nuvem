@@ -16,9 +16,9 @@ if (isset($_GET['id'])) {
     try {
         $sqlName = "update noticia set conteudo =:conteudo,data =: data where id =:id";
         $statement = $conexao->prepare($sqlName);
-        $statement->bindValue(':id', $id);
+        $statement->bindParam(':id', $id);
         $statement->bindParam(':data', $date);
-        $statement->bindValue(':conteudo', $_POST['conteudo']);
+        $statement->bindParam(':conteudo', $_POST['conteudo']);
         $statement->execute();
         $nome = $statement->fetch();
 
