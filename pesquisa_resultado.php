@@ -3,7 +3,7 @@ require_once 'cabecalho.php';
 require_once 'session-start.php';
 require_once 'configuracao.php';
 
-$sql = "SELECT conteudo,data FROM noticia WHERE conteudo like %:conteudo%";
+$sql = "SELECT * FROM noticia WHERE conteudo like %:conteudo% ORDER BY data";
 $stmt = $conexao->prepare($sql);
 $stmt->bindValue(':conteudo', $_POST['conteudo']);
 $stmt->execute();
