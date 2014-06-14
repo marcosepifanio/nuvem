@@ -20,7 +20,7 @@ h2 {
 #box {
 	position: relative;
 	margin: auto;
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-left: 61px;
 	margin-top: 100px;
 	height: 250px;
@@ -32,7 +32,7 @@ h2 {
 }
 
 #menu {
-	margin-right: -65px !important;
+	margin-right: -85px !important;
 }
 .menuLinks {
 	position: absolute;
