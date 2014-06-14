@@ -6,7 +6,7 @@ $id = $_GET['id'];
 $conteudo = $_GET['conteudo'];
 ?>
 <!doctype html>
-<?php echo $conteudo; ?>
+
 <form method="post" action="editar_noticia.php?id=<?php echo $id; ?>">
     <div class="row">
         <div class="large-12 columns">
@@ -21,9 +21,4 @@ $conteudo = $_GET['conteudo'];
     </div>
 </form>
 
-/* 
-* To change this license header, choose License Headers in Project Properties.
-* To change this template file, choose Tools | Templates
-* and open the template in the editor.
-*/
 
