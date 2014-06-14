@@ -21,6 +21,7 @@ if (isset($_GET['id'])) {
         $statement->bindParam(':conteudo', $_POST['conteudo']);
         $statement->execute();
         $nome = $statement->fetch();
+        print_r($statement);
 
 
         //$redirecionar = "noticias.php";
