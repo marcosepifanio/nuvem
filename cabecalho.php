@@ -33,7 +33,7 @@
 					</li>
                                         <li class="divider"></li>
 					<li>
-						<a href="pesquisa.php" class="">Logout</a>
+						<a href="pesquisa.php" class="">Pesquisa</a>
 					</li>
 					<li class="divider"></li>
 					<li>
