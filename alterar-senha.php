@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Cadastro - Zuada ...LaLALa</title>
+		<title>Alterar Senha - Zuada ...LaLALa</title>
 
 		<link rel="stylesheet" href="css/foundation.css" />
 		<link rel="stylesheet" href="css/normalize.css" />
@@ -11,30 +11,19 @@
 	</head>
 	<body id="background">
 		<div id="caixa">
-			<h2>Cadastro de Usuários</h2>
+			<h2>Alterar Senha</h2>
 		</div>
 		<div id="boxCadastro">
-			<div id="menuCadastro">
-				<form method="post" action="inserir.php" id="form1">
+			<div id="menuResetarSenha">
+				<form method="post" action="alterar_senha.php" id="form1">
 
 					<div class="small-8">
 						<div class="row">
 							<div class="small-3 columns">
-								<label for="nome" class="right inline">Usuário:</label>
+								<label for="email" class="right inline">E-mail:</label>
 							</div>
 							<div class="small-9 columns">
-								<input type="text" name="nome" id="nome" class="required radius" />
-							</div>
-						</div>
-					</div>
-
-					<div class="small-8">
-						<div class="row">
-							<div class="small-3 columns">
-								<label for="email" class="right inline">E-Mail:</label>
-							</div>
-							<div class="small-9 columns">
-								<input type="email" name="emailCadastro" id="email" class="required radius" />
+								<input type="email" name="email" id="email" class="required radius" placeholder="Digite seu email" />
 							</div>
 						</div>
 					</div>
@@ -62,8 +51,8 @@
 					</div>
 
 					<div class="small-8">
-						<div class="row">
-							<input class="button radius" type="submit" value="Cadastrar" title="Concluir cadastro"  />
+						<div class="menuLinksResetar">
+							<input class="button radius" type="submit" value="Alterar" title="Alterar senha"  />
 							<input class="button radius" type="reset" value="Limpar" title="Limpar campos" />
 							<a href="login.php" class="button radius" title="Voltar para login" >Voltar</a>
 						</div>
@@ -79,11 +68,7 @@
                 $(document).ready(function() {
                     $("#form1").validate({
                         rules : {
-                            nome : {
-                                required : true,
-                                minlength : 4
-                            },
-                            emailCadastro : {
+                            email : {
                                 required : true,
                                 email : true
                             },
@@ -97,11 +82,7 @@
                             }
                         },
                         messages : {
-                            nome : {
-                                required : "Campo Obrigatório",
-                                minlength : "O nome deve ter no mínimo 4 caracteres"
-                            },
-                            emailCadastro : {
+                            email : {
                                 required : "Campo Obrigatório",
                                 email : "Digite um email válido"
                             },

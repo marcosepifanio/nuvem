@@ -2,9 +2,8 @@
 require_once "lib/nusoap.php";
 require_once 'configuracao.php';
 require_once 'cabecalho.php';
-require_once 'session-start.php';
 
-$client = new nusoap_client('http://localhost/nuvem/servidorSOAP.php');
+$client = new nusoap_client('http://ufczuada.azurewebsites.net/servidorSOAP.php');
 session_start();
 $autor = $_SESSION['email'];
 

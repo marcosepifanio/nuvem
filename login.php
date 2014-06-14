@@ -41,9 +41,10 @@
 							</div>
 						</div>
 						<div class="small-8">
-							<div class="row">
+							<div class="menuLinks">
 								<input type="submit" class="button radius" title="Click para se logar"  value="Logar">
-								<a href="cadastro.php" class="button radius" title="Cadastrar novo usuário" > Cadastrar</a>
+								<a href="cadastro.php" class="button radius" title="Cadastrar novo usuário" >Cadastrar</a>
+								<a href="alterar-senha.php" class="button radius" title="Resetar senha" >Esqueceu senha</a>
 							</div>
 						</div>
 				</form>
