@@ -1,7 +1,10 @@
 <?php
 require_once "lib/nusoap.php";
 require_once 'configuracao.php';
-$client = new nusoap_client('http://ufczuada.azurewebsites.net/servidorSOAP.php');
+require_once 'cabecalho.php';
+require_once 'session-start.php';
+
+$client = new nusoap_client('http://localhost/nuvem/servidorSOAP.php');
 session_start();
 $autor = $_SESSION['email'];
 
@@ -17,9 +20,7 @@ try {
 }
 
 $email = $_SESSION['email'];
-
 $parametros = array('nome' => $nome['nome'], 'email' => $email);
-
 $result = $client -> call('showUser', $parametros);
-print_r($result);
+echo $result;
 ?>

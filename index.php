@@ -14,9 +14,11 @@ require_once 'session-start.php';
 		<script src="js/vendor/modernizr.js"></script>
 	</head>
 	<body>
-		<div class=" large-9 medium-8 columns">
+
+		<div class="large-9 medium-8 columns">
 			<a  href="img/zuada.jpg"> <img id="alignImg" src="img/zuada.jpg"> </a>
 		</div>
+
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/foundation.min.js"></script>
 		<script>

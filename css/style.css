@@ -48,10 +48,11 @@ h2 {
 #boxButton {
 	position: relative;
 	float: left;
-	margin-left:39%;
+	margin-left: 39%;
 	margin-top: 20px;
 }
-#alignImg{
+#alignImg {
+	display: block;
 	position: relative;
 	float: right;
 	margin-top: 25px;

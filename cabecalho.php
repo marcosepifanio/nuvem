@@ -37,6 +37,10 @@
                     </li>
                     <li class="divider"></li>
                     <li>
+                        <a href="cliente.php" class="">Dados Usuário</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
                         <a href="sair.php" class="">Logout</a>
                     </li>
                 </ul>
