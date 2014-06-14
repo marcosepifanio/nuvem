@@ -1,7 +1,6 @@
 <?php
 require_once 'cabecalho.php';
 require_once 'session-start.php';
-session_start();
 require_once 'configuracao.php';
 
 $sql = "SELECT conteudo,data FROM noticia WHERE conteudo like %:conteudo%";
