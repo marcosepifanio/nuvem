@@ -29,11 +29,11 @@ require_once 'session-start.php';
 					<form method="post" action="enviar-ata.php">
 						<div class="row">
 							<div class="large-12 columns">
-								<label><h3>Cadastrar Ata</h3> 									<textarea placeholder="Notícia..." name="conteudo" required=""></textarea> </label>
+								<label for="cadastroAta"><h3>Cadastrar Ata</h3> 									<textarea placeholder="Notícia..." name="conteudo" required=""></textarea> </label>
 							</div>
 						</div>
 						<div class="medium-4 columns">
-							<input class="button success" type="submit" value="Cadastrar" title="Cadastrar De Ata" />
+							<input class="button success" id="cadastroAta" type="submit" value="Cadastrar" title="Cadastrar De Ata" />
 						</div>
 					</form>
 
@@ -49,7 +49,7 @@ require_once 'session-start.php';
                 $autor = $linha['autor'];
                 $conteudo = $linha['conteudo'];
                 $data = implode("/",array_reverse(explode("-",$linha['data'])));
-                echo '<p class="panel"><blockquote> "' . $conteudo . '"<cite>' . $autor .  ' no dia '. $data . '    </cite></blockquote></p>';
+                echo '<p class="panel"><blockquote> ' . $conteudo . '<cite>' . $autor .  ' no dia '. $data . '    </cite></blockquote></p>';
             }
 			?>
 		</div>

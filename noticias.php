@@ -29,8 +29,8 @@ require_once 'session-start.php';
                     <form method="post" action="enviando_noticia.php">
                         <div class="row">
                             <div class="large-12 columns">
-                                <label><h3>Publicar noticia</h3> 									
-                                    <textarea placeholder="Notícia..." name="conteudo" required=""></textarea> </label>
+                                <label for="noticia"><h3>Publicar noticia</h3>
+                                    <textarea placeholder="Notícia..." id="noticia" name="conteudo" required=""></textarea> </label>
                             </div>
                         </div>
                         <div class="medium-4 columns">
