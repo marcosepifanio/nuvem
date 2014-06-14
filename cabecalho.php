@@ -31,6 +31,10 @@
 					<li>
 						<a href="noticias.php" class="">Noticias</a>
 					</li>
+                                        <li class="divider"></li>
+					<li>
+						<a href="pesquisa.php" class="">Logout</a>
+					</li>
 					<li class="divider"></li>
 					<li>
 						<a href="sair.php" class="">Logout</a>
