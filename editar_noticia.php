@@ -23,8 +23,8 @@ if (isset($_GET['id'])) {
         $nome = $statement->fetch();
 
 
-        $redirecionar = "noticias.php";
-        header("Location: $redirecionar");
+        //$redirecionar = "noticias.php";
+        //header("Location: $redirecionar");
     } catch (PDOException $ex) {
         echo $ex->getMessage();
         die();
