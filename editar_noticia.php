@@ -1,13 +1,18 @@
 <?php
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $conteudo = $_GET['conteudo'];
+    
+
+/* codigo que pega a data-time atual*/
+date_default_timezone_set('America/Sao_Paulo');
+$date = date('Y-m-d H:i:s');
 
     try {
-        $sqlName = "update noticia set conteudo =:conteudo where id =:id";
+        $sqlName = "update noticia set conteudo =:conteudo,data =: data where id =:id";
         $statement = $conexao -> prepare($sqlName);
         $statement -> bindValue(':id', $id);
-        $statement -> bindValue(':conteudo', $conteudo);
+        $statement -> bindParam(':data', $date);
+        $statement -> bindValue(':conteudo', $_REQUEST['conteudo']);
         $statement -> execute();
         $nome = $statement -> fetch();
     } catch (PDOException $ex) {
