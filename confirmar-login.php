@@ -16,7 +16,7 @@ $result -> execute();
 if ($result -> fetch()) {
     $_SESSION['email'] = $email;
     $_SESSION['senha'] = $senha;
-    header('location:index.php');
+    header('location:home.php');
 } else {
     unset($_SESSION['email']);
     unset($_SESSION['senha']);

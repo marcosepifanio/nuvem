@@ -17,9 +17,9 @@ require_once 'cabecalho.php';
 				<form action="up_blob.php" method="post" enctype="multipart/form-data">
 					<fieldset>
 						<p>
-							<label for="Enviar arquivo">Enviar foto:</label>
+							Enviar Foto
 						</p>
-						<input type="file"  name="arquivo" class="width233" />
+						<input type="file" name="arquivo" id="arquivo" />
 						<input type="submit" class="button success small" name="enviar" value="Enviar" />
 					</fieldset>
 				</form>
