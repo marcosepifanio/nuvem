@@ -6,6 +6,7 @@ require_once 'session-start.php';
 <!doctype html>
 <html class="no-js" lang="en">
 	<head>
+		
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Zuada ...LaLALa</title>
